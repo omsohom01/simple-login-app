@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Simple Login App</h2>
 
+        <!-- Sign Up Form -->
+        <div id="signup-form">
+            <h3>Sign Up</h3>
+            <input type="email" id="signup-email" placeholder="Email" required>
+            <input type="password" id="signup-password" placeholder="Password" required>
+            <button onclick="signup()">Sign Up</button>
+            <p>Already have an account? <a href="#" onclick="showSignIn()">Sign In</a></p>
+        </div>
+
+        <!-- Sign In Form -->
+        <div id="signin-form" style="display: none;">
+            <h3>Sign In</h3>
+            <input type="email" id="signin-email" placeholder="Email" required>
+            <input type="password" id="signin-password" placeholder="Password" required>
+            <button onclick="signin()">Sign In</button>
+            <p>Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a></p>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
